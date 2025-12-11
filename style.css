@@ -1,0 +1,100 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY STYLING */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background-image: url(https://i.pinimg.com/1200x/98/d3/a6/98d3a6424181c19db842dc0cf5d57000.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 1900px;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2rem;
+}
+
+/* MAIN CONTAINER */
+.container {
+    background: rgb(253, 252, 252);
+    width: 90%;
+    max-width: 35rem;
+    padding: 2.5rem 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* HEADING */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: black
+    letter-spacing: 0.05rem;
+
+}
+
+/* INPUT FIELD */
+#inputBox {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 0.6rem;
+    border: 0.15rem solid black;
+    outline: none;
+    margin-bottom: 1.5rem;
+}
+
+/* BUTTON */
+button {
+    width: 60%;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.6rem;
+    background: linear-gradient(135deg, black, rgb(158, 157, 157));
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: red;
+}
+
+/* RESULT & ERROR TEXT */
+#result,
+#error {
+    font-size: 1.2rem;
+    margin-top: 0.6rem;
+    font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 480px) {
+    .container {
+        padding: 2rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    #inputBox {
+        font-size: 1rem;
+    }
+}
